@@ -1,0 +1,6 @@
+{
+  "name": "Transform Data Quickly - Video Hero Section",
+  "description": "A modern hero section with custom JS requestAnimationFrame video fade system, search box, and custom typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
