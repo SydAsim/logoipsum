@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .font-schibsted {
     font-family: 'Schibsted Grotesk', sans-serif;
@@ -14,3 +18,4 @@
     font-family: 'Fustat', sans-serif;
   }
 }
+

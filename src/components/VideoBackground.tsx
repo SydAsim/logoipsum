@@ -128,7 +128,7 @@ export const VideoBackground: React.FC<VideoBackgroundProps> = ({ videoUrl }) =>
   }, []);
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10 bg-black/5">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
       <video
         ref={videoRef}
         src={videoUrl}
@@ -141,8 +141,6 @@ export const VideoBackground: React.FC<VideoBackgroundProps> = ({ videoUrl }) =>
         // NO CSS transition styling applied as mandated (pure JS requestAnimationFrame fade)
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[115%] h-[115%] object-cover object-top max-w-none"
       />
-      {/* Light subtle gradient overlay to ensure UI elements pop gracefully */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60 pointer-events-none" />
     </div>
   );
 };
